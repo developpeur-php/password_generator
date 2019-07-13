@@ -1,6 +1,6 @@
 /*
  *
- * node app.js
+ * node app.js SIZE
  *
  */
 
@@ -14,7 +14,7 @@ var list_available_char = [
 	"}", ";", ":", ",", ".", "<", ">", "/", "?", "€", "£", "µ"
 ];
 
-var size = 30;
+var size = process.argv[2];
 var password = ""; // "var password" === error undefined
 
 for (let index = 0; index < size; index++) {
